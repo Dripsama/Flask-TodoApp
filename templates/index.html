@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block head %}
+<link rel="stylesheet" href="static/main.css" />
+<title>Todo App</title>
+{% endblock %} {% block body %}
+<div class="App">
+  <div class="container">
+    <h1>TODO APP</h1>
+    <form class="todoForm" action="/" method="POST">
+      <input type="text" name="content" id="content" />
+      <button type="submit">"Edit" : "Add"</button>
+    </form>
+    <ul class="todos">
+      {% for task in tasks %}
+      <li>
+        <span className="todo-text">{{ task.content }}</span>
+        <a href="">
+          <button className="edit-btn">Edit</button>
+        </a>
+        <a href="/delete/{{task.id}}">
+          <button className="delete-btn">Delete</button>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}

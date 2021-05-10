@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: aliceblue;
+}
+
+.container {
+  display: flex;
+  width: 30%;
+  flex-flow: column;
+  color: aliceblue;
+  border: 1px solid gray;
+  height: 80vh;
+  padding: 10px;
+  background-color: #04009a;
+  border-radius: 5px;
+  overflow: auto;
+  box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.432),
+    3px 3px 5px rgba(1, 1, 1, 0.432);
+}
+
+@media (max-width: 550px) {
+  .container {
+    width: 80%;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+.todoForm {
+  width: 95%;
+  margin-left: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.todos {
+  margin: 0;
+  padding: 0;
+}
+
+.todo {
+  list-style: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #77acf1;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+
+.todo-text {
+  flex: 1;
+}
+
+input {
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  width: 80%;
+}
+
+input:focus,
+button:focus {
+  outline: navajowhite;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #c0fefc;
+}
+
+.delete-btn{
+  background-color: rgb(209, 84, 84); 
+}
